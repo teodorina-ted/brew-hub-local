@@ -1,7 +1,20 @@
 import { useI18n } from "@/contexts/I18nContext";
 import { SITE } from "@/lib/translations";
-import { useLocalized } from "@/lib/site";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { useLocalized, buildWhatsAppLink } from "@/lib/site";
+import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+
+// TikTok glyph (lucide doesn't ship a TikTok icon)
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
+    <path d="M16.5 3a5.5 5.5 0 0 0 4.5 4.5v3a8.5 8.5 0 0 1-4.5-1.3v6.3a6.5 6.5 0 1 1-6.5-6.5c.34 0 .67.03 1 .08v3.07a3.5 3.5 0 1 0 2.5 3.35V3h3z" />
+  </svg>
+);
+
+const socials = [
+  { label: "Instagram", href: "https://instagram.com/beerhub", Icon: Instagram },
+  { label: "Facebook", href: "https://facebook.com/beerhub", Icon: Facebook },
+  { label: "TikTok", href: "https://tiktok.com/@beerhub", Icon: TikTokIcon },
+];
 
 export const Footer = () => {
   const { t } = useI18n();
@@ -23,6 +36,38 @@ export const Footer = () => {
             <p className="mt-5 inline-block rounded-sm border border-primary/40 px-3 py-1 font-display text-xs uppercase tracking-widest text-primary">
               {t("footer.age")}
             </p>
+
+            {/* Socials */}
+            <div className="mt-6 flex flex-wrap items-center gap-2">
+              {socials.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="group inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background transition-all hover:border-primary hover:bg-gradient-amber hover:text-primary-foreground hover:shadow-glow"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
+              <a
+                href={buildWhatsAppLink(t("wa.message"))}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background transition-all hover:border-[hsl(142_70%_45%)] hover:bg-[hsl(142_70%_45%)] hover:text-white"
+              >
+                <MessageCircle className="h-4 w-4" />
+              </a>
+              <a
+                href={`mailto:${SITE.email}`}
+                aria-label="Email"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background transition-all hover:border-primary hover:bg-gradient-amber hover:text-primary-foreground hover:shadow-glow"
+              >
+                <Mail className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
           <div>
