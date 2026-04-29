@@ -1,4 +1,4 @@
-import { Beer, UtensilsCrossed, Lightbulb, Music2 } from "lucide-react";
+import { Beer, UtensilsCrossed, Lightbulb } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 
 export const WhyUs = () => {
@@ -7,7 +7,6 @@ export const WhyUs = () => {
     { icon: Beer, t: "why.f1.t", d: "why.f1.d" },
     { icon: UtensilsCrossed, t: "why.f2.t", d: "why.f2.d" },
     { icon: Lightbulb, t: "why.f3.t", d: "why.f3.d" },
-    { icon: Music2, t: "why.f4.t", d: "why.f4.d" },
   ] as const;
 
   return (
@@ -19,7 +18,7 @@ export const WhyUs = () => {
           </span>
           <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">{t("why.title")}</h2>
         </div>
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (
             <div
               key={f.t}
