@@ -15,8 +15,8 @@ export const Contact = () => {
   return (
     <section id="contact" className="relative border-t border-border bg-background py-20 sm:py-28">
       <div className="container">
-        <div className="grid gap-10 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+        <div className="grid gap-8 md:grid-cols-5 md:gap-10">
+          <div className="md:col-span-2">
             <span className="inline-block border-l-2 border-primary pl-3 font-display text-xs uppercase tracking-[0.3em] text-primary">
               {t("contact.eyebrow")}
             </span>
@@ -52,12 +52,12 @@ export const Contact = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-3">
-            <div className="relative overflow-hidden rounded-sm border border-border shadow-deep">
+          <div className="md:col-span-3">
+            <div className="relative h-full min-h-[360px] overflow-hidden rounded-sm border border-border shadow-deep">
               <iframe
                 src={osm}
-                title="HopHaus location"
-                className="h-[420px] w-full grayscale-[40%] contrast-110 dark:invert dark:hue-rotate-180 dark:grayscale-[80%]"
+                title="Beer Hub location"
+                className="h-full min-h-[360px] w-full grayscale-[40%] contrast-110 dark:invert dark:hue-rotate-180 dark:grayscale-[80%]"
                 loading="lazy"
               />
               <a
