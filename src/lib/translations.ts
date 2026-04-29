@@ -1,18 +1,18 @@
 export type Lang = "ro" | "ru";
 
 export const SITE = {
-  name: "HopHaus",
-  tagline_ro: "Taproom Industrial · Bere Artizanală",
-  tagline_ru: "Индустриальный Taproom · Крафтовое Пиво",
+  name: "Beer Hub",
+  tagline_ro: "Taproom · Bere Artizanală",
+  tagline_ru: "Taproom · Крафтовое Пиво",
   phone: "+373 22 000 000",
   phoneHref: "tel:+37322000000",
   whatsapp: "37360000000", // wa.me number, no +
-  email: "salut@hophaus.md",
-  address_ro: "Str. Industrială 12, Chișinău, MD-2001",
-  address_ru: "ул. Индустриальная 12, Кишинёв, MD-2001",
-  // Chișinău center coords as placeholder
-  lat: 47.0105,
-  lng: 28.8638,
+  email: "salut@beerhub.md",
+  address_ro: "Bălți, MD",
+  address_ru: "Бельцы, MD",
+  // Bălți center coords
+  lat: 47.7615,
+  lng: 27.9293,
 };
 
 export const translations = {
@@ -24,26 +24,24 @@ export const translations = {
     "nav.contact": "Contact",
     "nav.book": "Programare",
 
-    "hero.eyebrow": "Taproom Industrial",
-    "hero.title": "Bere artizanală.\nAtmosferă brută.",
-    "hero.subtitle": "Beton, alamă și lumină caldă. Locul unde berea bună întâlnește prietenii buni.",
+    "hero.eyebrow": "Taproom · Bălți",
+    "hero.title": "Bere artizanală.\nAtmosferă primitoare.",
+    "hero.subtitle": "Lemn, alamă și lumină caldă. Locul unde berea bună întâlnește prietenii buni.",
     "hero.cta_book": "Rezervă o masă",
     "hero.cta_call": "Sună acum",
 
     "about.eyebrow": "Cine suntem",
     "about.title": "Un pub mic. O pasiune mare.",
-    "about.body": "HopHaus este un taproom independent născut din dragostea pentru bere meșteșugărească. Selectăm cu grijă fiecare butoi, lucrăm cu producători locali și construim un loc în care fiecare seară miroase a hamei și povești bune.",
+    "about.body": "Beer Hub este un taproom independent din Bălți, născut din dragostea pentru bere meșteșugărească. Selectăm cu grijă fiecare butoi, lucrăm cu producători locali și construim un loc în care fiecare seară miroase a hamei și povești bune.",
 
     "why.eyebrow": "De ce noi",
     "why.title": "Mai mult decât o bere.",
     "why.f1.t": "12 robinete rotative",
     "why.f1.d": "Selecții noi în fiecare săptămână, de la pilsner clasic la stout dens.",
-    "why.f2.t": "Mâncare pe lemn",
-    "why.f2.d": "Charcuterie, brânzeturi locale și gustări calde, perfecte cu o pintă rece.",
-    "why.f3.t": "Atmosferă brută",
-    "why.f3.d": "Beton, cărămidă, becuri Edison. Fără pretenții, doar vibe.",
-    "why.f4.t": "Evenimente live",
-    "why.f4.d": "Tap takeovers, quiz nights și concerte mici în weekend.",
+    "why.f2.t": "Platouri cu gustări",
+    "why.f2.d": "Brânzeturi, mezeluri și covrigei — perfecte alături de o pintă rece.",
+    "why.f3.t": "Atmosferă primitoare",
+    "why.f3.d": "Lemn cald, lumină ambientală și muzică bună. Doar vibe.",
 
     "beers.eyebrow": "La robinet",
     "beers.title": "Selecția săptămânii",
