@@ -137,7 +137,7 @@ export const translations = {
     "gallery.title": "Наше место",
 
     "contact.eyebrow": "Контакты и график",
-    "contact.title": "Загляни к нам",
+    "contact.title": "Заходи, не стесняйся",
     "contact.hours": "График",
     "contact.address": "Адрес",
     "contact.phone": "Телефон",
