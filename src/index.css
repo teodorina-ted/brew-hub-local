@@ -2,116 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-/* BEERLOGA — forest green, warm gold, burgundy craft pub palette. All colors HSL. */
+/* BEERLOGA — very dark navy-blue pub, clean golden yellow, cream. All colors HSL. */
 
 @layer base {
   :root {
-    /* Light mode — aged cream, forest green, warm gold, burgundy accents */
-    --background: 38 48% 90%;           /* cream parchment #F5EAD6 */
-    --foreground: 28 40% 16%;           /* dark brown #3A2418 */
+    /* Light mode — aged cream with navy text and golden accents */
+    --background: 38 48% 90%;
+    --foreground: 209 80% 9%;
 
-    --card: 38 45% 93%;                 /* aged paper */
-    --card-foreground: 28 40% 16%;
+    --card: 38 45% 94%;
+    --card-foreground: 209 80% 9%;
 
-    --popover: 38 45% 93%;
-    --popover-foreground: 28 40% 16%;
+    --popover: 38 45% 94%;
+    --popover-foreground: 209 80% 9%;
 
-    --primary: 151 53% 15%;             /* deep forest green #123B2A */
+    --primary: 209 80% 9%;
     --primary-foreground: 38 48% 94%;
-    --primary-glow: 42 60% 48%;         /* warm gold glow */
+    --primary-glow: 44 90% 61%;
 
-    --secondary: 39 36% 81%;            /* aged beige #E6D4B5 */
-    --secondary-foreground: 151 53% 15%;
+    --secondary: 39 36% 81%;
+    --secondary-foreground: 209 80% 9%;
 
     --muted: 38 32% 84%;
-    --muted-foreground: 28 26% 30%;
+    --muted-foreground: 209 35% 28%;
 
-    --accent: 39 63% 48%;               /* warm gold #C6922E */
-    --accent-foreground: 28 40% 16%;
+    --accent: 44 90% 61%;
+    --accent-foreground: 209 80% 9%;
 
-    --destructive: 4 69% 28%;           /* burgundy red #7A1F16 */
-    --destructive-foreground: 38 48% 94%;
+    --destructive: 44 90% 61%;
+    --destructive-foreground: 209 80% 9%;
 
-    --border: 151 30% 24%;              /* green border */
+    --border: 44 60% 47%;
     --input: 39 28% 72%;
-    --ring: 39 63% 48%;
+    --ring: 44 90% 61%;
 
     --radius: 0.875rem;
 
-    --surface-raised: 38 45% 93%;
+    --surface-raised: 38 45% 94%;
     --surface-sunken: 39 36% 81%;
     --concrete: 39 28% 76%;
 
     /* Effects */
-    --gradient-amber: linear-gradient(135deg, hsl(39 63% 48%), hsl(43 72% 66%));
-    --gradient-burgundy: linear-gradient(135deg, hsl(4 69% 28%), hsl(151 53% 15%));
-    --gradient-dark: linear-gradient(180deg, hsl(151 53% 10% / 0) 0%, hsl(151 53% 10% / 0.85) 60%, hsl(28 40% 8%) 100%);
-    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(39 63% 48% / 0.24), transparent 60%);
-    --shadow-glow: 0 0 60px -10px hsl(39 63% 48% / 0.55);
-    --shadow-deep: 0 25px 50px -20px hsl(28 40% 8% / 0.5);
+    --gradient-amber: linear-gradient(135deg, hsl(44 90% 61%), hsl(45 100% 77%));
+    --gradient-burgundy: linear-gradient(135deg, hsl(44 90% 61%), hsl(209 80% 9%));
+    --gradient-dark: linear-gradient(180deg, hsl(209 82% 6% / 0) 0%, hsl(209 82% 5% / 0.9) 60%, hsl(209 82% 4%) 100%);
+    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(44 90% 61% / 0.24), transparent 60%);
+    --shadow-glow: 0 0 60px -10px hsl(44 90% 61% / 0.55);
+    --shadow-deep: 0 25px 50px -20px hsl(209 82% 4% / 0.6);
 
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 151 53% 15%;
+    --sidebar-background: 209 80% 9%;
     --sidebar-foreground: 38 48% 94%;
-    --sidebar-primary: 39 63% 48%;
-    --sidebar-primary-foreground: 28 40% 16%;
-    --sidebar-accent: 4 69% 28%;
-    --sidebar-accent-foreground: 38 48% 94%;
-    --sidebar-border: 151 35% 24%;
-    --sidebar-ring: 39 63% 48%;
+    --sidebar-primary: 44 90% 61%;
+    --sidebar-primary-foreground: 209 80% 9%;
+    --sidebar-accent: 44 90% 61%;
+    --sidebar-accent-foreground: 209 80% 9%;
+    --sidebar-border: 44 60% 47%;
+    --sidebar-ring: 44 90% 61%;
   }
 
   .dark {
-    /* Dark mode — deep pine/navy, glowing gold, burgundy accents */
-    --background: 150 40% 7%;           /* very dark pine */
+    /* Dark mode — default BEERLOGA very dark navy-blue pub atmosphere */
+    --background: 209 82% 6%;
     --foreground: 38 48% 92%;
 
-    --card: 151 35% 11%;
+    --card: 209 70% 9%;
     --card-foreground: 38 48% 92%;
 
-    --popover: 151 35% 11%;
+    --popover: 209 70% 9%;
     --popover-foreground: 38 48% 92%;
 
-    --primary: 39 63% 48%;              /* warm gold */
-    --primary-foreground: 151 53% 10%;
-    --primary-glow: 43 72% 66%;         /* pale gold */
+    --primary: 44 90% 61%;
+    --primary-foreground: 209 82% 6%;
+    --primary-glow: 45 100% 77%;
 
-    --secondary: 151 35% 16%;
+    --secondary: 209 60% 12%;
     --secondary-foreground: 38 48% 92%;
 
-    --muted: 151 30% 14%;
+    --muted: 209 55% 10%;
     --muted-foreground: 38 24% 70%;
 
-    --accent: 4 69% 28%;                /* burgundy */
-    --accent-foreground: 38 48% 94%;
+    --accent: 44 90% 61%;
+    --accent-foreground: 209 82% 6%;
 
-    --destructive: 4 70% 38%;
-    --destructive-foreground: 38 48% 94%;
+    --destructive: 44 90% 61%;
+    --destructive-foreground: 209 82% 6%;
 
-    --border: 151 28% 24%;
-    --input: 151 28% 24%;
-    --ring: 39 63% 48%;
+    --border: 44 60% 32%;
+    --input: 209 45% 20%;
+    --ring: 44 90% 61%;
 
-    --surface-raised: 151 35% 13%;
-    --surface-sunken: 150 40% 6%;
-    --concrete: 151 18% 23%;
+    --surface-raised: 209 70% 10%;
+    --surface-sunken: 209 82% 5%;
+    --concrete: 209 30% 20%;
 
-    --gradient-amber: linear-gradient(135deg, hsl(39 63% 48%), hsl(43 72% 66%));
-    --gradient-burgundy: linear-gradient(135deg, hsl(4 69% 28%), hsl(4 60% 20%));
-    --gradient-dark: linear-gradient(180deg, hsl(150 40% 7% / 0) 0%, hsl(150 40% 5% / 0.9) 55%, hsl(150 40% 4%) 100%);
-    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(39 63% 48% / 0.28), transparent 60%);
-    --shadow-glow: 0 0 80px -10px hsl(39 63% 48% / 0.6);
-    --shadow-deep: 0 25px 50px -20px hsl(0 0% 0% / 0.75);
+    --gradient-amber: linear-gradient(135deg, hsl(44 90% 61%), hsl(45 100% 77%));
+    --gradient-burgundy: linear-gradient(135deg, hsl(44 90% 61%), hsl(209 60% 12%));
+    --gradient-dark: linear-gradient(180deg, hsl(209 82% 6% / 0) 0%, hsl(209 82% 4% / 0.94) 55%, hsl(209 82% 3%) 100%);
+    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(44 90% 61% / 0.28), transparent 60%);
+    --shadow-glow: 0 0 80px -10px hsl(44 90% 61% / 0.6);
+    --shadow-deep: 0 25px 50px -20px hsl(0 0% 0% / 0.78);
 
-    --sidebar-background: 150 40% 7%;
+    --sidebar-background: 209 82% 6%;
     --sidebar-foreground: 38 48% 92%;
-    --sidebar-primary: 39 63% 48%;
-    --sidebar-primary-foreground: 151 53% 10%;
-    --sidebar-accent: 4 69% 28%;
-    --sidebar-accent-foreground: 38 48% 94%;
-    --sidebar-border: 151 28% 24%;
-    --sidebar-ring: 39 63% 48%;
+    --sidebar-primary: 44 90% 61%;
+    --sidebar-primary-foreground: 209 82% 6%;
+    --sidebar-accent: 44 90% 61%;
+    --sidebar-accent-foreground: 209 82% 6%;
+    --sidebar-border: 44 60% 32%;
+    --sidebar-ring: 44 90% 61%;
   }
 }
 
@@ -130,7 +130,10 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: 'Oswald', 'Inter', sans-serif;
     letter-spacing: 0.01em;
   }
@@ -144,12 +147,29 @@
     color: transparent;
   }
 
-  .bg-gradient-amber { background: var(--gradient-amber); }
-  .bg-gradient-burgundy { background: var(--gradient-burgundy); }
-  .bg-gradient-dark { background: var(--gradient-dark); }
-  .bg-gradient-radial { background: var(--gradient-radial); }
-  .shadow-glow { box-shadow: var(--shadow-glow); }
-  .shadow-deep { box-shadow: var(--shadow-deep); }
+  .bg-gradient-amber {
+    background: var(--gradient-amber);
+  }
+
+  .bg-gradient-burgundy {
+    background: var(--gradient-burgundy);
+  }
+
+  .bg-gradient-dark {
+    background: var(--gradient-dark);
+  }
+
+  .bg-gradient-radial {
+    background: var(--gradient-radial);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-deep {
+    box-shadow: var(--shadow-deep);
+  }
 
   .concrete-texture {
     background-image:
@@ -167,20 +187,68 @@
   }
 }
 
+/* General animations */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 hsl(39 63% 48% / 0.7); }
-  50% { box-shadow: 0 0 0 14px hsl(39 63% 48% / 0); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 hsl(44 90% 61% / 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 0 14px hsl(44 90% 61% / 0);
+  }
 }
 
 @keyframes float-up {
-  0% { transform: translateY(0); opacity: 0.7; }
-  100% { transform: translateY(-40px); opacity: 0; }
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
 }
 
-.animate-fade-up { animation: fade-up 0.7s var(--transition-smooth) both; }
-.animate-pulse-glow { animation: pulse-glow 2s ease-out infinite; }
+.animate-fade-up {
+  animation: fade-up 0.7s var(--transition-smooth) both;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-out infinite;
+}
+
+/* BREAKING NEWS BAR — scrolling animation */
+/* Used by src/components/site/Header.tsx */
+/* To stop the scrolling effect, remove animation from .marquee-track */
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-left 24s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}

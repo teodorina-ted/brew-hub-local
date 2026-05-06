@@ -5,11 +5,11 @@ export const buildWhatsAppLink = (message: string) =>
   `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
 
 export const buildMapsLink = () =>
-  // Universal — opens default maps app on mobile, Google Maps on desktop
-  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SITE.addressQuery)}`;
+  `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(SITE.addressQuery)}`;
 
 export const useLocalized = () => {
   const { lang } = useI18n();
+
   return {
     address: lang === "ru" ? SITE.address_ru : SITE.address_ro,
     tagline: lang === "ru" ? SITE.tagline_ru : SITE.tagline_ro,

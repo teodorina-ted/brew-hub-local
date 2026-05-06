@@ -2,15 +2,23 @@ export type Lang = "ro" | "ru";
 
 export const SITE = {
   name: "BEERLOGA",
+  domain: "beerloga.online",
+  website: "https://beerloga.online",
   tagline_ro: "Craft Brew · Bere Artizanală",
   tagline_ru: "Craft Brew · Крафтовое Пиво",
+
   phone: "+373 60 988 829",
   phoneHref: "tel:+37360988829",
+
   whatsapp: "37360988829", // wa.me number, no +
-  email: "salut@beerloga.md",
+
+  email: "info@beerloga.online",
+  emailHref: "mailto:info@beerloga.online",
+
   address_ro: "Strada Alexandru cel Bun 14, MD-3112, Bălți, Moldova",
   address_ru: "ул. Александру чел Бун 14, MD-3112, Бельцы, Молдова",
   addressQuery: "Strada Alexandru cel Bun 14, MD-3112 Bălți, Moldova",
+
   // Bălți — Strada Alexandru cel Bun 14
   lat: 47.7606,
   lng: 27.9295,
@@ -33,7 +41,7 @@ export const translations = {
 
     "about.eyebrow": "Cine suntem",
     "about.title": "Un pub mic. O pasiune mare.",
-    "about.body": "Beer Hub este un taproom independent din Bălți, născut din dragostea pentru bere meșteșugărească. Selectăm cu grijă fiecare butoi, lucrăm cu producători locali și construim un loc în care fiecare seară miroase a hamei și povești bune.",
+    "about.body": "BEERLOGA este un taproom independent din Bălți, născut din dragostea pentru bere meșteșugărească. Selectăm cu grijă fiecare butoi, lucrăm cu producători locali și construim un loc în care fiecare seară miroase a hamei și povești bune.",
 
     "why.eyebrow": "De ce noi",
     "why.title": "Mai mult decât o bere.",
@@ -69,6 +77,7 @@ export const translations = {
     "contact.hours": "Program",
     "contact.address": "Adresă",
     "contact.phone": "Telefon",
+    "contact.email": "Email",
     "contact.directions": "Deschide în Hartă",
     "contact.h_mon_thu": "Lu–Jo: 16:00 – 00:00",
     "contact.h_fri_sat": "Vi–Sâ: 16:00 – 02:00",
@@ -105,7 +114,7 @@ export const translations = {
 
     "about.eyebrow": "Кто мы",
     "about.title": "Маленький паб. Большая страсть.",
-    "about.body": "Beer Hub — независимый taproom в Бельцах, рождённый из любви к крафтовому пиву. Мы тщательно отбираем каждый кег, работаем с локальными пивоварами и создаём место, где каждый вечер пахнет хмелем и хорошими историями.",
+    "about.body": "BEERLOGA — независимый taproom в Бельцах, рождённый из любви к крафтовому пиву. Мы тщательно отбираем каждый кег, работаем с локальными пивоварами и создаём место, где каждый вечер пахнет хмелем и хорошими историями.",
 
     "why.eyebrow": "Почему мы",
     "why.title": "Больше, чем просто пиво.",
@@ -141,6 +150,7 @@ export const translations = {
     "contact.hours": "График",
     "contact.address": "Адрес",
     "contact.phone": "Телефон",
+    "contact.email": "Email",
     "contact.directions": "Открыть в Картах",
     "contact.h_mon_thu": "Пн–Чт: 16:00 – 00:00",
     "contact.h_fri_sat": "Пт–Сб: 16:00 – 02:00",

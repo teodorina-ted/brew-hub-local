@@ -10,37 +10,62 @@ export const Hero = () => {
   const { tagline } = useLocalized();
 
   return (
-    <section id="top" className="relative grain isolate flex min-h-[100svh] items-end overflow-hidden">
+    <section
+      id="top"
+      className="relative grain isolate flex min-h-[100svh] items-end overflow-hidden bg-primary"
+    >
       <img
         src={hero}
-        alt="BEERLOGA taproom interior"
+        alt="BEERLOGA craft pub interior"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
         width={1920}
         height={1280}
       />
+
       <div className="absolute inset-0 -z-10 bg-gradient-dark" />
-      <div className="absolute inset-0 -z-10 bg-gradient-radial opacity-70" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,hsl(var(--accent)/0.28),transparent_35%),radial-gradient(circle_at_80%_10%,hsl(var(--primary)/0.45),transparent_40%)]" />
+      <div className="absolute inset-0 -z-10 bg-primary/35 mix-blend-multiply" />
 
       <div className="container pb-16 pt-32 sm:pb-24 sm:pt-40">
         <div className="max-w-3xl animate-fade-up">
-          <span className="inline-block border-l-2 border-primary pl-3 font-display text-xs uppercase tracking-[0.3em] text-primary">
+          <span className="inline-block border-l-2 border-accent pl-3 font-display text-xs uppercase tracking-[0.3em] text-accent">
             {t("hero.eyebrow")} · {tagline}
           </span>
+
           <h1 className="mt-5 whitespace-pre-line font-display text-5xl font-bold leading-[0.95] text-white sm:text-7xl lg:text-8xl">
             {t("hero.title").split("\n")[0]}
             <br />
-            <span className="text-gradient-amber">{t("hero.title").split("\n")[1]}</span>
+            <span className="text-gradient-amber">
+              {t("hero.title").split("\n")[1]}
+            </span>
           </h1>
-          <p className="mt-6 max-w-xl text-base text-white/80 sm:text-lg">{t("hero.subtitle")}</p>
+
+          <p className="mt-6 max-w-xl text-base text-white/85 sm:text-lg">
+            {t("hero.subtitle")}
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="h-12 bg-gradient-amber px-7 font-display uppercase tracking-wider text-primary-foreground shadow-glow hover:opacity-90">
-              <a href={buildWhatsAppLink(t("wa.message"))} target="_blank" rel="noopener noreferrer">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 bg-gradient-amber px-7 font-display uppercase tracking-wider text-primary-foreground shadow-glow hover:opacity-90"
+            >
+              <a
+                href={buildWhatsAppLink(t("wa.message"))}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Calendar className="h-4 w-4" />
                 {t("hero.cta_book")}
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-12 border-white/30 bg-white/5 px-7 font-display uppercase tracking-wider text-white backdrop-blur hover:bg-white/10 hover:text-white">
+
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="h-12 border-white/30 bg-white/5 px-7 font-display uppercase tracking-wider text-white backdrop-blur hover:bg-white/10 hover:text-white"
+            >
               <a href={SITE.phoneHref}>
                 <Phone className="h-4 w-4" />
                 {t("hero.cta_call")}
