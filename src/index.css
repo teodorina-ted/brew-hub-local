@@ -6,50 +6,49 @@
 
 @layer base {
   :root {
-    /* Light mode — cream, burgundy & gold (from logo) */
-    --background: 36 38% 94%;
-    --foreground: 18 35% 14%;
+    /* Light mode — cream parchment, burgundy, gold (BEERLOGA badge) */
+    --background: 38 45% 91%;          /* warm cream */
+    --foreground: 20 40% 12%;           /* near-black brown */
 
-    --card: 36 40% 97%;
-    --card-foreground: 18 35% 14%;
+    --card: 38 50% 95%;
+    --card-foreground: 20 40% 12%;
 
-    --popover: 36 40% 97%;
-    --popover-foreground: 18 35% 14%;
+    --popover: 38 50% 95%;
+    --popover-foreground: 20 40% 12%;
 
-    --primary: 354 62% 32%;            /* deep burgundy */
-    --primary-foreground: 36 45% 96%;
-    --primary-glow: 354 70% 45%;
+    --primary: 354 58% 28%;             /* deep burgundy ribbon */
+    --primary-foreground: 38 50% 95%;
+    --primary-glow: 354 65% 40%;
 
-    --secondary: 36 25% 86%;
-    --secondary-foreground: 18 35% 14%;
+    --secondary: 38 30% 84%;
+    --secondary-foreground: 20 40% 12%;
 
-    --muted: 36 22% 88%;
-    --muted-foreground: 20 15% 35%;
+    --muted: 38 28% 86%;
+    --muted-foreground: 22 20% 32%;
 
-    --accent: 36 68% 46%;              /* warm gold */
-    --accent-foreground: 18 35% 14%;
+    --accent: 36 70% 44%;               /* warm gold (hops) */
+    --accent-foreground: 20 40% 12%;
 
-    --destructive: 0 70% 42%;
-    --destructive-foreground: 36 45% 96%;
+    --destructive: 0 70% 38%;
+    --destructive-foreground: 38 50% 95%;
 
-    --border: 30 18% 78%;
-    --input: 30 18% 78%;
-    --ring: 354 62% 32%;
+    --border: 30 22% 74%;
+    --input: 30 22% 74%;
+    --ring: 354 58% 28%;
 
     --radius: 0.875rem;
 
-    /* Brand surfaces */
-    --surface-raised: 36 40% 97%;
-    --surface-sunken: 36 25% 90%;
-    --concrete: 30 12% 78%;
+    --surface-raised: 38 50% 95%;
+    --surface-sunken: 38 30% 88%;
+    --concrete: 30 14% 76%;
 
     /* Effects */
-    --gradient-amber: linear-gradient(135deg, hsl(36 75% 50%), hsl(28 70% 42%));
-    --gradient-burgundy: linear-gradient(135deg, hsl(354 62% 32%), hsl(354 55% 22%));
-    --gradient-dark: linear-gradient(180deg, hsl(18 35% 8% / 0) 0%, hsl(18 35% 8% / 0.85) 60%, hsl(18 35% 6%) 100%);
-    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(36 75% 50% / 0.18), transparent 60%);
-    --shadow-glow: 0 0 60px -10px hsl(36 68% 46% / 0.45);
-    --shadow-deep: 0 25px 50px -20px hsl(18 35% 8% / 0.45);
+    --gradient-amber: linear-gradient(135deg, hsl(36 78% 48%), hsl(28 70% 38%));
+    --gradient-burgundy: linear-gradient(135deg, hsl(354 58% 28%), hsl(354 50% 18%));
+    --gradient-dark: linear-gradient(180deg, hsl(20 40% 8% / 0) 0%, hsl(20 40% 8% / 0.85) 60%, hsl(20 40% 6%) 100%);
+    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(36 78% 48% / 0.2), transparent 60%);
+    --shadow-glow: 0 0 60px -10px hsl(36 70% 44% / 0.5);
+    --shadow-deep: 0 25px 50px -20px hsl(20 40% 8% / 0.45);
 
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 

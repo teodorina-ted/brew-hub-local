@@ -2,7 +2,7 @@ import { useI18n } from "@/contexts/I18nContext";
 import { SITE } from "@/lib/translations";
 import { useLocalized, buildWhatsAppLink } from "@/lib/site";
 import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import logo from "@/assets/beerloga-logo.png";
+import logo from "@/assets/beerloga-logo.svg";
 
 // TikTok glyph (lucide doesn't ship a TikTok icon)
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -27,8 +27,8 @@ export const Footer = () => {
       <div className="container py-14">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5 font-display text-2xl font-bold tracking-wider">
-              <img src={logo} alt="BEERLOGA" className="h-10 w-auto" />
+            <div className="flex items-center gap-3 font-display text-2xl font-bold tracking-wider text-primary">
+              <img src={logo} alt="BEERLOGA" className="h-14 w-auto" />
               {SITE.name}
             </div>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
