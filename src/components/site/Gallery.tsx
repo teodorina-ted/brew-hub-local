@@ -25,7 +25,7 @@ export const Gallery = () => {
 
         <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:grid-rows-2">
           {items.map((it) => (
-            <div key={it.alt} className={`group relative overflow-hidden rounded-sm bg-card ${it.className}`}>
+            <div key={it.alt} className={`group relative overflow-hidden rounded-2xl bg-card ${it.className}`}>
               <img
                 src={it.src}
                 alt={it.alt}
