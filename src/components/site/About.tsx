@@ -14,7 +14,7 @@ export const About = () => {
             loading="lazy"
             width={1280}
             height={896}
-            className="relative aspect-[4/3] w-full rounded-sm object-cover shadow-deep"
+            className="relative aspect-[4/3] w-full rounded-2xl object-cover shadow-deep"
           />
         </div>
         <div>

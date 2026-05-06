@@ -2,6 +2,7 @@ import { useI18n } from "@/contexts/I18nContext";
 import { SITE } from "@/lib/translations";
 import { useLocalized, buildWhatsAppLink } from "@/lib/site";
 import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import logo from "@/assets/beerloga-logo.png";
 
 // TikTok glyph (lucide doesn't ship a TikTok icon)
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -11,9 +12,9 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 );
 
 const socials = [
-  { label: "Instagram", href: "https://instagram.com/beerhub", Icon: Instagram },
-  { label: "Facebook", href: "https://facebook.com/beerhub", Icon: Facebook },
-  { label: "TikTok", href: "https://tiktok.com/@beerhub", Icon: TikTokIcon },
+  { label: "Instagram", href: "https://instagram.com/beerloga", Icon: Instagram },
+  { label: "Facebook", href: "https://facebook.com/beerloga", Icon: Facebook },
+  { label: "TikTok", href: "https://tiktok.com/@beerloga", Icon: TikTokIcon },
 ];
 
 export const Footer = () => {
@@ -26,8 +27,8 @@ export const Footer = () => {
       <div className="container py-14">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 font-display text-2xl font-bold tracking-wider">
-              <span className="inline-block h-2 w-2 rounded-full bg-gradient-amber" />
+            <div className="flex items-center gap-2.5 font-display text-2xl font-bold tracking-wider">
+              <img src={logo} alt="BEERLOGA" className="h-10 w-auto" />
               {SITE.name}
             </div>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
@@ -46,7 +47,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="group inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background transition-all hover:border-primary hover:bg-gradient-amber hover:text-primary-foreground hover:shadow-glow"
+                  className="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-glow"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -56,14 +57,14 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background transition-all hover:border-[hsl(142_70%_45%)] hover:bg-[hsl(142_70%_45%)] hover:text-white"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background transition-all hover:border-[hsl(142_70%_45%)] hover:bg-[hsl(142_70%_45%)] hover:text-white"
               >
                 <MessageCircle className="h-4 w-4" />
               </a>
               <a
                 href={`mailto:${SITE.email}`}
                 aria-label="Email"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background transition-all hover:border-primary hover:bg-gradient-amber hover:text-primary-foreground hover:shadow-glow"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-glow"
               >
                 <Mail className="h-4 w-4" />
               </a>

@@ -35,13 +35,13 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center gap-1.5">
-          <div className="hidden items-center rounded-sm border border-border bg-muted/50 p-0.5 sm:flex">
+          <div className="hidden items-center rounded-full border border-border bg-muted/50 p-0.5 sm:flex">
             {(["ro", "ru"] as const).map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
-                className={`rounded-sm px-2.5 py-1 text-xs font-bold uppercase transition-all ${
-                  lang === l ? "bg-gradient-amber text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                className={`rounded-full px-3 py-1 text-xs font-bold uppercase transition-all ${
+                  lang === l ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
                 aria-label={`Switch to ${l}`}
               >

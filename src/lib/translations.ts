@@ -1,18 +1,19 @@
 export type Lang = "ro" | "ru";
 
 export const SITE = {
-  name: "Beer Hub",
-  tagline_ro: "Taproom · Bere Artizanală",
-  tagline_ru: "Taproom · Крафтовое Пиво",
-  phone: "+373 22 000 000",
-  phoneHref: "tel:+37322000000",
-  whatsapp: "37360000000", // wa.me number, no +
-  email: "salut@beerhub.md",
-  address_ro: "Bălți, MD",
-  address_ru: "Бельцы, MD",
-  // Bălți center coords
-  lat: 47.7615,
-  lng: 27.9293,
+  name: "BEERLOGA",
+  tagline_ro: "Craft Brew · Bere Artizanală",
+  tagline_ru: "Craft Brew · Крафтовое Пиво",
+  phone: "+373 60 988 829",
+  phoneHref: "tel:+37360988829",
+  whatsapp: "37360988829", // wa.me number, no +
+  email: "salut@beerloga.md",
+  address_ro: "Strada Alexandru cel Bun 14, MD-3112, Bălți, Moldova",
+  address_ru: "ул. Александру чел Бун 14, MD-3112, Бельцы, Молдова",
+  addressQuery: "Strada Alexandru cel Bun 14, MD-3112 Bălți, Moldova",
+  // Bălți — Strada Alexandru cel Bun 14
+  lat: 47.7606,
+  lng: 27.9295,
 };
 
 export const translations = {
@@ -42,6 +43,8 @@ export const translations = {
     "why.f2.d": "Brânzeturi, mezeluri și covrigei — perfecte alături de o pintă rece.",
     "why.f3.t": "Atmosferă primitoare",
     "why.f3.d": "Lemn cald, lumină ambientală și muzică bună. Doar vibe.",
+    "why.f4.t": "Grătar la oră",
+    "why.f4.d": "Închiriem grătarul cu pachete: 1h / 3h / 5h+. Doar pe rezervare.",
 
     "beers.eyebrow": "La robinet",
     "beers.title": "Selecția săptămânii",
@@ -76,7 +79,7 @@ export const translations = {
     "cta.whatsapp": "Scrie-ne pe WhatsApp",
     "cta.touch": "Ia legătura",
 
-    "wa.message": "Salut HopHaus! Aș vrea să rezerv o masă.",
+    "wa.message": "Salut BEERLOGA! Aș vrea să rezerv o masă.",
     "wa.tooltip": "Chat live pe WhatsApp",
 
     "footer.rights": "Toate drepturile rezervate.",
@@ -112,6 +115,8 @@ export const translations = {
     "why.f2.d": "Сыры, мясные деликатесы и брецели — идеально к холодной пинте.",
     "why.f3.t": "Уютная атмосфера",
     "why.f3.d": "Тёплое дерево, мягкий свет и хорошая музыка. Только вайб.",
+    "why.f4.t": "Гриль почасово",
+    "why.f4.d": "Аренда мангала: пакеты 1ч / 3ч / 5ч+. Только по бронированию.",
 
     "beers.eyebrow": "На кране",
     "beers.title": "Подборка недели",
@@ -146,7 +151,7 @@ export const translations = {
     "cta.whatsapp": "Написать в WhatsApp",
     "cta.touch": "Связаться",
 
-    "wa.message": "Привет HopHaus! Хочу забронировать стол.",
+    "wa.message": "Привет BEERLOGA! Хочу забронировать стол.",
     "wa.tooltip": "Живой чат в WhatsApp",
 
     "footer.rights": "Все права защищены.",

@@ -13,7 +13,7 @@ export const Hero = () => {
     <section id="top" className="relative grain isolate flex min-h-[100svh] items-end overflow-hidden">
       <img
         src={hero}
-        alt="HopHaus taproom interior"
+        alt="BEERLOGA taproom interior"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
         width={1920}
         height={1280}
