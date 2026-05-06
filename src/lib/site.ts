@@ -5,8 +5,8 @@ export const buildWhatsAppLink = (message: string) =>
   `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
 
 export const buildMapsLink = () =>
-  // Universal geo link — opens default maps app on mobile, Google Maps on desktop
-  `https://www.google.com/maps/search/?api=1&query=${SITE.lat},${SITE.lng}`;
+  // Universal — opens default maps app on mobile, Google Maps on desktop
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SITE.addressQuery)}`;
 
 export const useLocalized = () => {
   const { lang } = useI18n();
