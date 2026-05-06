@@ -29,7 +29,7 @@ export const Beers = () => {
           {beers.map((b) => (
             <article
               key={b.n}
-              className="group flex flex-col overflow-hidden rounded-sm border border-border bg-card transition-all hover:border-primary/50 hover:shadow-deep"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-deep"
             >
               <div className="relative aspect-[4/5] overflow-hidden bg-muted">
                 <img
@@ -40,12 +40,14 @@ export const Beers = () => {
                   height={1000}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute right-3 top-3 rounded-sm bg-background/90 px-2.5 py-1 font-display text-xs font-bold tracking-wider text-primary backdrop-blur">
-                  {b.abv}%
-                </div>
               </div>
               <div className="flex flex-1 flex-col p-5">
-                <h3 className="font-display text-xl font-bold uppercase tracking-wide">{t(b.n)}</h3>
+                <div className="flex items-start justify-between gap-3">
+                  <h3 className="font-display text-xl font-bold uppercase tracking-wide">{t(b.n)}</h3>
+                  <span className="shrink-0 rounded-full bg-primary px-2.5 py-1 font-display text-xs font-bold tracking-wider text-primary-foreground">
+                    {b.abv}%
+                  </span>
+                </div>
                 <p className="mt-1 text-xs uppercase tracking-widest text-primary">{t(b.s)}</p>
                 <p className="mt-3 text-sm text-muted-foreground">{t(b.d)}</p>
               </div>
