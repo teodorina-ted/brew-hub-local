@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #F5EAD6; /* cream background */
+  color: #123B2A; /* forest green */
 }
 
 .logo {
@@ -11,11 +13,13 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #C6922Eaa); /* warm gold */
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #7A1F16aa); /* burgundy red */
 }
 
 @keyframes logo-spin {
@@ -35,8 +39,11 @@
 
 .card {
   padding: 2em;
+  background-color: #E6D4B5; /* aged paper beige */
+  border: 2px solid #123B2A; /* forest green */
+  color: #3A2418; /* dark brown */
 }
 
 .read-the-docs {
-  color: #888;
+  color: #7A1F16; /* burgundy red */
 }
