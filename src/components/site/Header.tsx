@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useI18n } from "@/contexts/I18nContext";
 import { SITE } from "@/lib/translations";
+import logo from "@/assets/beerloga-logo.svg";
 
 const navItems: { href: string; key: any }[] = [
   { href: "#about", key: "nav.about" },
@@ -21,9 +22,9 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 border-b border-border/40 bg-background/70 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between gap-4">
-        <a href="#top" className="flex items-center gap-2 font-display text-xl font-bold tracking-wider">
-          <span className="inline-block h-2 w-2 rounded-full bg-gradient-amber shadow-glow" />
-          <span>{SITE.name}</span>
+        <a href="#top" className="flex items-center gap-2.5 font-display text-xl font-bold tracking-wider text-primary">
+          <img src={logo} alt="BEERLOGA" className="h-11 w-auto" />
+          <span className="hidden sm:inline">{SITE.name}</span>
         </a>
 
         <nav className="hidden items-center gap-7 md:flex">
