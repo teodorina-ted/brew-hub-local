@@ -8,9 +8,8 @@ export const Contact = () => {
   const { t } = useI18n();
   const { address } = useLocalized();
 
-  // OpenStreetMap embed; click overlay opens device default maps app
-  const bbox = `${SITE.lng - 0.01},${SITE.lat - 0.005},${SITE.lng + 0.01},${SITE.lat + 0.005}`;
-  const osm = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${SITE.lat},${SITE.lng}`;
+  // Google Maps embed (no API key required)
+  const gmaps = `https://www.google.com/maps?q=${encodeURIComponent(SITE.addressQuery)}&z=16&output=embed`;
 
   return (
     <section id="contact" className="relative border-t border-border bg-background py-20 sm:py-28">
@@ -55,10 +54,11 @@ export const Contact = () => {
           <div className="md:col-span-3">
             <div className="relative h-full min-h-[360px] overflow-hidden rounded-sm border border-border shadow-deep">
               <iframe
-                src={osm}
-                title="Beer Hub location"
-                className="h-full min-h-[360px] w-full grayscale-[40%] contrast-110 dark:invert dark:hue-rotate-180 dark:grayscale-[80%]"
+                src={gmaps}
+                title="BEERLOGA location"
+                className="h-full min-h-[360px] w-full"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
               <a
                 href={buildMapsLink()}
