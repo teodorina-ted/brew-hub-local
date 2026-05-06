@@ -52,7 +52,7 @@ export const Contact = () => {
           </div>
 
           <div className="md:col-span-3">
-            <div className="relative h-full min-h-[360px] overflow-hidden rounded-sm border border-border shadow-deep">
+            <div className="relative h-full min-h-[360px] overflow-hidden rounded-2xl border border-border shadow-deep">
               <iframe
                 src={gmaps}
                 title="BEERLOGA location"
@@ -64,13 +64,11 @@ export const Contact = () => {
                 href={buildMapsLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute inset-0 flex items-end justify-end p-4"
                 aria-label={t("contact.directions")}
+                className="absolute bottom-4 right-4 inline-flex items-center gap-2 rounded-full bg-background px-4 py-2.5 font-display text-xs uppercase tracking-wider shadow-deep transition-all hover:bg-primary hover:text-primary-foreground"
               >
-                <span className="inline-flex items-center gap-2 rounded-sm bg-background px-4 py-2.5 font-display text-xs uppercase tracking-wider shadow-deep transition-all hover:bg-gradient-amber hover:text-primary-foreground">
-                  <ExternalLink className="h-3.5 w-3.5" />
-                  {t("contact.directions")}
-                </span>
+                <ExternalLink className="h-3.5 w-3.5" />
+                {t("contact.directions")}
               </a>
             </div>
           </div>
