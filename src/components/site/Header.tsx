@@ -56,6 +56,7 @@ export const Header = () => {
             </a>
           ))}
 
+          {/* MENU DOWNLOAD — commented out until menu is ready
           <a
             href={menuHref}
             target="_blank"
@@ -65,6 +66,10 @@ export const Header = () => {
             <Download className="h-3.5 w-3.5" />
             {menuLabel}
           </a>
+          */}
+          <span className="inline-flex items-center gap-2 rounded-full border border-[#C6922E]/40 bg-[#C6922E]/10 px-3 py-1.5 font-display text-xs uppercase tracking-wider text-[#E8C46A]/60 cursor-default select-none">
+            {lang === "ru" ? "Меню скоро" : "Meniu în curând"}
+          </span>
         </nav>
 
         <div className="flex items-center gap-1.5">
@@ -134,6 +139,7 @@ export const Header = () => {
               </a>
             ))}
 
+            {/* MENU DOWNLOAD — commented out until menu is ready
             <a
               href={menuHref}
               target="_blank"
@@ -144,6 +150,10 @@ export const Header = () => {
               <Download className="h-3.5 w-3.5" />
               {menuLabel}
             </a>
+            */}
+            <span className="mt-3 inline-flex items-center justify-center rounded-full border border-[#C6922E]/40 bg-[#C6922E]/10 px-4 py-2 font-display text-xs uppercase tracking-wider text-[#E8C46A]/60 cursor-default select-none">
+              {lang === "ru" ? "Меню скоро" : "Meniu în curând"}
+            </span>
 
             <div className="mt-3 flex items-center gap-2 sm:hidden">
               {(["ro", "ru"] as const).map((l) => (

@@ -1,4 +1,4 @@
-import { Beer, UtensilsCrossed, Lightbulb, Flame } from "lucide-react";
+import { Beer, UtensilsCrossed, Lightbulb, Tv2 } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 
 export const WhyUs = () => {
@@ -7,7 +7,7 @@ export const WhyUs = () => {
     { icon: Beer, t: "why.f1.t", d: "why.f1.d" },
     { icon: UtensilsCrossed, t: "why.f2.t", d: "why.f2.d" },
     { icon: Lightbulb, t: "why.f3.t", d: "why.f3.d" },
-    { icon: Flame, t: "why.f4.t", d: "why.f4.d" },
+    { icon: Tv2, t: "why.f4.t", d: "why.f4.d" },
   ] as const;
 
   return (
